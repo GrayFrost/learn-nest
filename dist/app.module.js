@@ -11,6 +11,7 @@ const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const hello_module_1 = require("./modules/hello/hello.module");
+const exception_module_1 = require("./modules/exception/exception.module");
 const logger_middleware_1 = require("./common/middlewares/logger.middleware");
 let AppModule = class AppModule {
     configure(consumer) {
@@ -19,7 +20,7 @@ let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [hello_module_1.HelloModule],
+        imports: [hello_module_1.HelloModule, exception_module_1.ExceptionModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

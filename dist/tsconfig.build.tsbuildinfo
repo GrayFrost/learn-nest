@@ -2256,13 +2256,33 @@
         "signature": "f19e62caaef459d906abf50617132054e2a0d263464e641047cfd160451bb35c",
         "affectsGlobalScope": false
       },
+      "../src/modules/exception/exception.service.ts": {
+        "version": "7b3465ffd76abc27cc2b253377baffc34e03441bdba7bc1c8b5b49bed7934b59",
+        "signature": "4ac0189a900d034952126092f30525973a1430c3bc30a190e34f23ed8a6886da",
+        "affectsGlobalScope": false
+      },
+      "../src/common/filters/http-exception.filter.ts": {
+        "version": "9054b2f0be7a4367713bad95858ee6a3674846ae56e5aa4609b89831478a1b1c",
+        "signature": "3e36187625a3d01a9d6bc74982054f72d7d69a9ca20a7985772a715f915f8367",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/exception/exception.controller.ts": {
+        "version": "14dddc30867e85dfab45d60b47e277d3a4b5e2559049da6a78f42f6ba4ede5ee",
+        "signature": "47efdf7f090ec5b696985d1863ecaee1ce06a8a1ee32bf33672b3869959d29be",
+        "affectsGlobalScope": false
+      },
+      "../src/modules/exception/exception.module.ts": {
+        "version": "437f0c4debecaa760c8e932e0b980a7ca9d350ee3c1084299c3ed05741f85200",
+        "signature": "b527fa4e90349cfd36f2f35737524f0901c3caef4bdbcc1cca326a79ea500606",
+        "affectsGlobalScope": false
+      },
       "../src/common/middlewares/logger.middleware.ts": {
         "version": "4350a03b63b538b246d276c39b2a83dedd7daa58d61e6c21bd145a534fa61f25",
         "signature": "edd4d3f28e7de4136249b998ea1ceb497bad839735e46843791de0672fae69bc",
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "a190578caec14f6ff76329b7416ec07ab73607b06da307f4c67b1ca2916db69a",
+        "version": "f037e2a734e9cb00955fa1770bcaa8e6eb79e886b028ee870c50b98ab1bd29ef",
         "signature": "3f20b0c7e1490d9c971393d9e9c7efce30af744831d4d75235612ee200785ed2",
         "affectsGlobalScope": false
       },
@@ -4451,10 +4471,15 @@
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/common/middlewares/logger.middleware.ts",
+        "../src/modules/exception/exception.module.ts",
         "../src/modules/hello/hello.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/common/filters/http-exception.filter.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
       ],
       "../src/common/middlewares/logger.middleware.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -4464,6 +4489,20 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/app.module.ts"
+      ],
+      "../src/modules/exception/exception.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/common/filters/http-exception.filter.ts",
+        "../src/modules/exception/exception.service.ts"
+      ],
+      "../src/modules/exception/exception.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/modules/exception/exception.controller.ts",
+        "../src/modules/exception/exception.service.ts"
+      ],
+      "../src/modules/exception/exception.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/modules/hello/dto/create-hello.dto.ts": [
         "../node_modules/class-validator/types/index.d.ts"
@@ -6255,9 +6294,15 @@
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
+      "../src/common/filters/http-exception.filter.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
       "../src/common/middlewares/logger.middleware.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/modules/exception/exception.controller.ts": [
+        "../src/modules/exception/exception.service.ts"
       ],
       "../src/modules/hello/hello.controller.ts": [
         "../src/modules/hello/dto/create-hello.dto.ts",
@@ -6791,8 +6836,12 @@
       "../src/app.controller.ts",
       "../src/app.module.ts",
       "../src/app.service.ts",
+      "../src/common/filters/http-exception.filter.ts",
       "../src/common/middlewares/logger.middleware.ts",
       "../src/main.ts",
+      "../src/modules/exception/exception.controller.ts",
+      "../src/modules/exception/exception.module.ts",
+      "../src/modules/exception/exception.service.ts",
       "../src/modules/hello/dto/create-hello.dto.ts",
       "../src/modules/hello/hello.controller.ts",
       "../src/modules/hello/hello.module.ts",

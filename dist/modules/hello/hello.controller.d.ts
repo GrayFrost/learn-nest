@@ -1,10 +1,9 @@
 import { HelloService } from './hello.service';
+import { GetHelloDto } from './dto/create-hello.dto';
 export declare class HelloController {
     private readonly helloService;
     constructor(helloService: HelloService);
-    fetch({ id }: {
-        id: any;
-    }): string;
+    fetch({ id }: GetHelloDto): string;
     save({ message }: {
         message: any;
     }): string;

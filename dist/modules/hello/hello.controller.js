@@ -15,6 +15,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HelloController = void 0;
 const common_1 = require("@nestjs/common");
 const hello_service_1 = require("./hello.service");
+const swagger_1 = require("@nestjs/swagger");
+const create_hello_dto_1 = require("./dto/create-hello.dto");
 let HelloController = class HelloController {
     constructor(helloService) {
         this.helloService = helloService;
@@ -34,9 +36,10 @@ let HelloController = class HelloController {
 };
 __decorate([
     common_1.Get(),
+    swagger_1.ApiOperation({ summary: 'fetch hello' }),
     __param(0, common_1.Query()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [create_hello_dto_1.GetHelloDto]),
     __metadata("design:returntype", String)
 ], HelloController.prototype, "fetch", null);
 __decorate([
@@ -61,6 +64,7 @@ __decorate([
     __metadata("design:returntype", String)
 ], HelloController.prototype, "remove", null);
 HelloController = __decorate([
+    swagger_1.ApiTags('hello'),
     common_1.Controller('hello'),
     __metadata("design:paramtypes", [hello_service_1.HelloService])
 ], HelloController);

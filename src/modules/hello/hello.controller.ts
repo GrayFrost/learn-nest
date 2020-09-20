@@ -1,13 +1,17 @@
 import { Controller, Get, Post, Query, Param, Body, Patch, Delete } from '@nestjs/common';
 import { HelloService } from './hello.service';
+import {ApiTags, ApiOperation} from '@nestjs/swagger';
+import {GetHelloDto} from './dto/create-hello.dto';
 
+@ApiTags('hello')
 @Controller('hello')
 export class HelloController {
   constructor(private readonly helloService: HelloService) {}
 
   // 查
   @Get()
-  fetch(@Query() {id}): string {
+  @ApiOperation({summary: 'fetch hello'})
+  fetch(@Query() {id}: GetHelloDto): string {
     return this.helloService.fetch(id);
   }
 

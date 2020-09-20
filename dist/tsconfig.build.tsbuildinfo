@@ -2256,9 +2256,14 @@
         "signature": "f19e62caaef459d906abf50617132054e2a0d263464e641047cfd160451bb35c",
         "affectsGlobalScope": false
       },
+      "../src/common/middlewares/logger.middleware.ts": {
+        "version": "4350a03b63b538b246d276c39b2a83dedd7daa58d61e6c21bd145a534fa61f25",
+        "signature": "edd4d3f28e7de4136249b998ea1ceb497bad839735e46843791de0672fae69bc",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "740812ced525a78e7e9ac54504984917c675533d00a4d744d69f61df611f57e0",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+        "version": "a190578caec14f6ff76329b7416ec07ab73607b06da307f4c67b1ca2916db69a",
+        "signature": "3f20b0c7e1490d9c971393d9e9c7efce30af744831d4d75235612ee200785ed2",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -4445,10 +4450,15 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
+        "../src/common/middlewares/logger.middleware.ts",
         "../src/modules/hello/hello.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/common/middlewares/logger.middleware.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
@@ -6242,6 +6252,13 @@
         "../node_modules/@types/express/index.d.ts",
         "../src/app.service.ts"
       ],
+      "../src/app.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/common/middlewares/logger.middleware.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
       "../src/modules/hello/hello.controller.ts": [
         "../src/modules/hello/dto/create-hello.dto.ts",
         "../src/modules/hello/hello.service.ts"
@@ -6774,6 +6791,7 @@
       "../src/app.controller.ts",
       "../src/app.module.ts",
       "../src/app.service.ts",
+      "../src/common/middlewares/logger.middleware.ts",
       "../src/main.ts",
       "../src/modules/hello/dto/create-hello.dto.ts",
       "../src/modules/hello/hello.controller.ts",

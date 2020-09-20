@@ -2257,8 +2257,8 @@
         "affectsGlobalScope": false
       },
       "../src/modules/exception/exception.service.ts": {
-        "version": "7b3465ffd76abc27cc2b253377baffc34e03441bdba7bc1c8b5b49bed7934b59",
-        "signature": "4ac0189a900d034952126092f30525973a1430c3bc30a190e34f23ed8a6886da",
+        "version": "7342ecb67f494ae2eba88d0dfe136d70e79d8a86bdd870dd9c2f1bbf49a70146",
+        "signature": "cb7eb28f0d266fdfcf1fadb9ccf7ffcd424fa61e7ae3a1cf5260dcff0ff6f55b",
         "affectsGlobalScope": false
       },
       "../src/common/filters/http-exception.filter.ts": {
@@ -2267,8 +2267,8 @@
         "affectsGlobalScope": false
       },
       "../src/modules/exception/exception.controller.ts": {
-        "version": "14dddc30867e85dfab45d60b47e277d3a4b5e2559049da6a78f42f6ba4ede5ee",
-        "signature": "47efdf7f090ec5b696985d1863ecaee1ce06a8a1ee32bf33672b3869959d29be",
+        "version": "d70d9082f667435d250be164a65743af16995ca39616f9d4046f7543c36ce6c2",
+        "signature": "73c588be6d7d45d14fc6580eafd5386f43b845631e879ca946640267c35f2d58",
         "affectsGlobalScope": false
       },
       "../src/modules/exception/exception.module.ts": {

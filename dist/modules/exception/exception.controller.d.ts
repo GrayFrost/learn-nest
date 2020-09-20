@@ -5,4 +5,5 @@ export declare class ExceptionController {
     fetch({ id }: {
         id: any;
     }): string;
+    path(id: any): string;
 }

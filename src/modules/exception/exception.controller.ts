@@ -1,10 +1,12 @@
 import {
     Controller,
     Get,
+    Patch,
     Query,
     UseFilters,
     HttpException,
     HttpStatus,
+    ParseIntPipe, Param
 } from "@nestjs/common";
 import { ExceptionService } from "./exception.service";
 import {HttpExceptionFilter} from '../../common/filters/http-exception.filter';
@@ -29,5 +31,14 @@ export class ExceptionController {
             );
         }
         return this.exceptionService.get(id);
+    }
+
+    // 查from param
+    @Patch(':id')
+    @ApiOperation({
+      summary: 'exception get from param'
+    })
+    path(@Param('id', new ParseIntPipe()) id): string{
+      return this.exceptionService.patch(id);
     }
 }

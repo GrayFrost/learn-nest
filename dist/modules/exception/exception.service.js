@@ -12,6 +12,9 @@ let ExceptionService = class ExceptionService {
     get(id) {
         return 'exception example';
     }
+    patch(id) {
+        return `exception get from param ${id}`;
+    }
 };
 ExceptionService = __decorate([
     common_1.Injectable()

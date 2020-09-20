@@ -29,6 +29,9 @@ let ExceptionController = class ExceptionController {
         }
         return this.exceptionService.get(id);
     }
+    path(id) {
+        return this.exceptionService.patch(id);
+    }
 };
 __decorate([
     common_1.Get(),
@@ -38,6 +41,16 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", String)
 ], ExceptionController.prototype, "fetch", null);
+__decorate([
+    common_1.Patch(':id'),
+    swagger_1.ApiOperation({
+        summary: 'exception get from param'
+    }),
+    __param(0, common_1.Param('id', new common_1.ParseIntPipe())),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", String)
+], ExceptionController.prototype, "path", null);
 ExceptionController = __decorate([
     swagger_1.ApiTags("excception"),
     common_1.Controller("exception"),
